@@ -2,7 +2,7 @@
 {% block content %}
   <h1>Car {{ car.model }}</h1>
   <ul>
-    <li>Manufacturer: {{ car.manufacturer.name }}</li>
+    <li>Manufacturer: {{ car.manufacturer.name }} {{ car.manufacturer.country }}</li>
     <li>Drivers: 
       {% if car.drivers %}
         <ul>
